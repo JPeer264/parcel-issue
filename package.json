@@ -1,0 +1,44 @@
+{
+  "name": "parcel-issue",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "browser": "NODE_ENV=development parcel --target default ./src/index.html",
+    "node": "NODE_ENV=development parcel watch ./src/index.ssr.js --target node",
+    "execute": "node dist/index.ssr"
+  },
+  "targets": {
+    "default": {
+      "publicUrl": "./",
+      "distDir": "./dist",
+      "engines": {}
+    },
+    "node": {
+      "distDir": "./dist",
+      "engines": {
+        "node": ">= 16"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPeer264/parcel-issue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JPeer264/parcel-issue/issues"
+  },
+  "homepage": "https://github.com/JPeer264/parcel-issue#readme",
+  "devDependencies": {
+    "@parcel/config-default": "^2.0.1",
+    "@parcel/resolver-glob": "^2.0.1",
+    "@parcel/transformer-raw": "^2.0.1",
+    "parcel": "2.0.1"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-slidedown": "^2.4.6"
+  }
+}
